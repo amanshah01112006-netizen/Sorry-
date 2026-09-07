@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255,70,120,.15), transparent 30%),
+      radial-gradient(circle at 80% 80%, rgba(180,50,255,.12), transparent 30%),
+      #08070c;
+    color:white;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+/* Floating hearts */
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:18px;
+    opacity:.7;
+    animation:float 7s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) scale(.7) rotate(0deg);
+        opacity:0;
+    }
+    15%{opacity:.8;}
+    100%{
+        transform:translateY(-110vh) scale(1.4) rotate(25deg);
+        opacity:0;
+    }
+}
+
+/* Main */
+.container{
+    width:min(92%,850px);
+    margin:auto;
+    padding:70px 0;
+    text-align:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:50px;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    font-size:12px;
+    letter-spacing:2px;
+    color:#ff9fba;
+    margin-bottom:25px;
+}
+
+h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(48px,10vw,90px);
+    line-height:1;
+    background:linear-gradient(90deg,#fff,#ff8faf,#fff);
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:shine 3s infinite;
+}
+
+@keyframes shine{
+    50%{filter:drop-shadow(0 0 20px rgba(255,100,150,.45));}
+}
+
+.subtitle{
+    margin-top:22px;
+    color:#bdb8c3;
+    font-size:15px;
+}
+
+.card{
+    margin-top:45px;
+    padding:35px 25px;
+    border-radius:28px;
+    background:rgba(255,255,255,.055);
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow:0 25px 80px rgba(0,0,0,.45);
+    backdrop-filter:blur(20px);
+}
+
+#typing{
+    min-height:170px;
+    color:#eee;
+    font-size:16px;
+    line-height:2;
+}
+
+.cursor{
+    color:#ff7198;
+    animation:blink .7s infinite;
+}
+
+@keyframes blink{
+    50%{opacity:0;}
+}
+
+.promise{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.box{
+    padding:20px 10px;
+    border-radius:18px;
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.box span{
+    display:block;
+    font-size:25px;
+    margin-bottom:8px;
+}
+
+.box p{
+    font-size:11px;
+    color:#aaa4af;
+}
+
+button{
+    margin-top:35px;
+    padding:16px 30px;
+    border:none;
+    border-radius:50px;
+    color:white;
+    font-weight:600;
+    font-size:14px;
+    cursor:pointer;
+    background:linear-gradient(135deg,#ff4f7b,#a83cff);
+    box-shadow:0 10px 35px rgba(255,70,130,.3);
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 15px 45px rgba(255,70,130,.5);
+}
+
+#secret{
+    display:none;
+    margin-top:30px;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,80,130,.08);
+    border:1px solid rgba(255,100,150,.2);
+    color:#ffc4d3;
+    line-height:1.8;
+}
+
+.footer{
+    margin-top:50px;
+    color:#66616c;
+    font-size:11px;
+    letter-spacing:1px;
+}
+
+@media(max-width:600px){
+    .promise{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        padding:28px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="badge">A LITTLE MESSAGE FROM MY HEART</div>
+
+    <h1>I'm Sorry<br>My Love ❤️</h1>
+
+    <p class="subtitle">
+        I know you're angry… but please read this once.
+    </p>
+
+    <div class="card">
+
+        <div id="typing"></div><span class="cursor">|</span>
+
+        <div class="promise">
+
+            <div class="box">
+                <span>🤍</span>
+                <p>I will understand you better.</p>
+            </div>
+
+            <div class="box">
+                <span>🫶</span>
+                <p>I will value your feelings.</p>
+            </div>
+
+            <div class="box">
+                <span>🌷</span>
+                <p>I will try to make you smile.</p>
+            </div>
+
+        </div>
+
+        <button onclick="showLove()">
+            Tap If You Still Love Me ❤️
+        </button>
+
+        <div id="secret">
+            🥺❤️ <br><br>
+            I don't want to win an argument.
+            <br>
+            I just want to win your smile back.
+            <br><br>
+            So… I'm genuinely sorry.
+            <br>
+            Please forgive your idiot. 🫠❤️
+            <br><br>
+            <b>Come back with that beautiful smile, please? 🫶</b>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        MADE WITH LOVE • ONLY FOR YOU ❤️
+    </div>
+
+</div>
+
+<script>
+
+/* Typing message */
+
+const message = `
+I know you're upset with me, and honestly…
+I hate knowing that I am the reason behind your bad mood.
+
+I'm not here to make excuses.
+I'm here to say that I'm genuinely sorry. ❤️
+
+You mean way more to me than any argument, ego,
+or stupid little mistake ever could.
+
+If I could go back and change that moment,
+I would do it without thinking twice.
+
+I just want you to know one thing…
+
+Your smile is one of my favourite things in this world,
+and I don't want to be the reason it disappears.
+
+So please forgive me when your heart feels ready.
+No pressure.
+
+I'll be right here… loving you. ❤️
+`;
+
+let i = 0;
+const typing = document.getElementById("typing");
+
+function typeText(){
+    if(i < message.length){
+        typing.innerHTML += message.charAt(i) === "\n"
+            ? "<br>"
+            : message.charAt(i);
+
+        i++;
+        setTimeout(typeText, 28);
+    }
+}
+
+typeText();
+
+
+/* Secret message */
+
+function showLove(){
+
+    const secret = document.getElementById("secret");
+
+    secret.style.display = "block";
+
+    for(let i=0;i<25;i++){
+        createHeart();
+    }
+
+    window.scrollTo({
+        top:document.body.scrollHeight,
+        behavior:"smooth"
+    });
+}
+
+
+/* Floating hearts */
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.innerHTML = ["❤️","💗","💖","💕","💘"][Math.floor(Math.random()*5)];
+
+    heart.style.left = Math.random()*100 + "vw";
+    heart.style.animationDuration = (4 + Math.random()*5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },9000);
+}
+
+setInterval(createHeart,700);
+
+</script>
+
+</body>
+</html>
