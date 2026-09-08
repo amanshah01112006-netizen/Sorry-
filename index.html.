@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>THE FRIENDSHIP TRIAL 💀</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at top,#301044,transparent 40%),
+      radial-gradient(circle at bottom,#111d42,transparent 45%),
+      #050507;
+    color:white;
+    overflow-x:hidden;
+}
+
+.container{
+    width:92%;
+    max-width:850px;
+    margin:auto;
+    padding:45px 0;
+    text-align:center;
+}
+
+.top{
+    font-size:12px;
+    letter-spacing:4px;
+    color:#aaa;
+}
+
+h1{
+    margin-top:15px;
+    font-size:clamp(42px,9vw,78px);
+    font-weight:800;
+    background:linear-gradient(90deg,#fff,#ff4d8d,#a855f7,#fff);
+    background-size:300%;
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:shine 5s infinite;
+}
+
+@keyframes shine{
+    0%{background-position:0%}
+    50%{background-position:100%}
+    100%{background-position:0%}
+}
+
+.intro{
+    margin-top:15px;
+    color:#aaa;
+    font-size:14px;
+}
+
+.card{
+    margin-top:25px;
+    padding:28px;
+    border-radius:28px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    box-shadow:0 20px 60px #0008;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.01);
+}
+
+.number{
+    color:#777;
+    font-size:12px;
+    letter-spacing:3px;
+}
+
+.name{
+    margin-top:8px;
+    font-size:29px;
+    font-weight:800;
+}
+
+.verdict{
+    display:inline-block;
+    margin:12px 0;
+    padding:6px 15px;
+    border-radius:50px;
+    background:#ffffff10;
+    border:1px solid #ffffff15;
+    color:#ff8eaf;
+    font-size:11px;
+}
+
+.roast{
+    color:#d3d3d3;
+    font-size:14px;
+    line-height:1.8;
+}
+
+.stats{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+}
+
+.stat{
+    padding:12px 5px;
+    border-radius:15px;
+    background:#ffffff08;
+    font-size:10px;
+    color:#999;
+}
+
+.stat b{
+    display:block;
+    color:white;
+    font-size:15px;
+    margin-bottom:3px;
+}
+
+button{
+    margin-top:35px;
+    padding:17px 32px;
+    border:none;
+    border-radius:50px;
+    color:white;
+    background:linear-gradient(135deg,#ff416c,#8e44ad);
+    font-weight:700;
+    font-size:14px;
+    box-shadow:0 10px 35px #ff416c44;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.06);
+}
+
+#final{
+    margin-top:25px;
+    min-height:70px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.footer{
+    margin-top:50px;
+    color:#555;
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+/* floating emojis */
+
+.float{
+    position:fixed;
+    bottom:-40px;
+    pointer-events:none;
+    animation:floatUp 5s linear forwards;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="top">CONFIDENTIAL • FRIENDSHIP COURT • 2026</div>
+
+<h1>THE ROAST<br>TRIAL 💀</h1>
+
+<p class="intro">
+Three suspects. Zero innocence. Unlimited bakchodi.
+</p>
+
+
+<!-- TINKU -->
+
+<div class="card">
+
+<div class="number">CASE #001</div>
+
+<div class="name">🗿 Tinku Gay</div>
+
+<div class="verdict">
+VERDICT: TOO MUCH DRAMA
+</div>
+
+<div class="roast">
+Tinku bhai ko dekh ke lagta hai life ne
+iska character development skip karke
+seedha comedy mode ON kar diya. 😂
+<br><br>
+
+Confidence unlimited hai,
+lekin logic ka server kabhi-kabhi down rehta hai. 💀
+</div>
+
+<div class="stats">
+<div class="stat"><b>99%</b>Drama</div>
+<div class="stat"><b>1%</b>Logic</div>
+<div class="stat"><b>100%</b>Bakchod</div>
+</div>
+
+</div>
+
+
+<!-- ADARSH -->
+
+<div class="card">
+
+<div class="number">CASE #002</div>
+
+<div class="name">🐌 Adarsh Ronda</div>
+
+<div class="verdict">
+VERDICT: LOADING HUMAN
+</div>
+
+<div class="roast">
+Adarsh Ronda ka processing speed itna legendary hai
+ki simple joke samajhne ke liye bhi
+system update mangta hai. 😭
+<br><br>
+
+Banda reply dene se pehle itna sochta hai
+jaise UN meeting mein decision lena ho. 💀
+</div>
+
+<div class="stats">
+<div class="stat"><b>2%</b>Speed</div>
+<div class="stat"><b>98%</b>Thinking</div>
+<div class="stat"><b>100%</b>Ronda</div>
+</div>
+
+</div>
+
+
+<!-- KUSH -->
+
+<div class="card">
+
+<div class="number">CASE #003</div>
+
+<div class="name">😎 Kush Fuck Boy</div>
+
+<div class="verdict">
+VERDICT: SELF-PROCLAIMED LEGEND
+</div>
+
+<div class="roast">
+Kush Fuck Boy naam se hi lagta hai
+banda apne bio ko reality samajh baitha hai. 😂
+<br><br>
+
+Flirting ka confidence NASA level ka,
+lekin saamne se "bhai" reply aaye
+toh pura system crash. 💀
+</div>
+
+<div class="stats">
+<div class="stat"><b>100%</b>Attitude</div>
+<div class="stat"><b>5%</b>Success</div>
+<div class="stat"><b>999%</b>Confidence</div>
+</div>
+
+</div>
+
+
+<button onclick="finalVerdict()">
+⚠️ REVEAL FINAL VERDICT
+</button>
+
+<div id="final"></div>
+
+<div class="footer">
+NO FRIENDS WERE SERIOUSLY HARMED 😂
+<br>
+JUST PURE FRIENDSHIP + BAKCHODI
+</div>
+
+</div>
+
+
+<script>
+
+function finalVerdict(){
+
+const verdicts = [
+
+"🏆 FINAL VERDICT: Teeno milke ek normal insaan ki intelligence ko balance karte hain. 💀",
+
+"🚨 SYSTEM WARNING: Friend group mein common sense detect nahi hua.",
+
+"😂 RESULT: Tinku = Drama | Adarsh = Loading | Kush = Confidence",
+
+"💀 Court ka
